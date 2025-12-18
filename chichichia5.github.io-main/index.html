@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>曾琦雅 Chi-Ya Tseng｜Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/836af3f0a0.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#home" aria-label="Go Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Chi-Ya Tseng</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">關於我</a>
+        <a href="#jobs">經歷</a>
+        <a href="#workphoto">工作花絮</a>
+        <a href="#certificates">證照</a>
+        <a href="#skills">技能</a>
+        <a href="#works">作品集</a>
+        <a href="#notes">筆記</a>
+        <a href="#activities">活動</a>
+        <a class="nav__pill" href="https://chichichia5.github.io/eng/" target="_blank" rel="noopener">English</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn mobile-only" id="menuToggle" aria-label="Open menu" title="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel">
+        <div class="drawer__head">
+          <div class="drawer__title">Menu</div>
+          <button class="icon-btn" id="menuClose" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="drawer__links">
+          <a href="#about" class="drawer-link">關於我</a>
+          <a href="#jobs" class="drawer-link">經歷</a>
+          <a href="#workphoto" class="drawer-link">工作花絮</a>
+          <a href="#certificates" class="drawer-link">證照</a>
+          <a href="#skills" class="drawer-link">技能</a>
+          <a href="#works" class="drawer-link">作品集</a>
+          <a href="#notes" class="drawer-link">筆記</a>
+          <a href="#activities" class="drawer-link">活動</a>
+          <a href="https://chichichia5.github.io/eng/" target="_blank" rel="noopener" class="drawer-link">English</a>
+        </div>
+      </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="page">
+    <section class="hero">
+      <div class="hero__bg"></div>
+
+      <div class="hero__content">
+        <div class="hero__profile">
+          <img class="avatar" src="./folder/myself.jpeg" alt="Chi-Ya Tseng" />
+          <div class="hero__meta">
+            <h1 class="hero__name">曾琦雅 <span class="hero__name-en">Chi-Ya Tseng</span></h1>
+            <p class="hero__title">
+              PR / Event & Marketing｜Content + Community｜Portfolio
+            </p>
+            <div class="hero__chips">
+              <span class="chip"><i class="fa-solid fa-location-dot"></i> 台灣</span>
+              <span class="chip"><i class="fa-solid fa-briefcase"></i> PR / Operations</span>
+              <span class="chip"><i class="fa-solid fa-chart-line"></i> Growth Mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__cards">
+          <article class="card glass">
+            <div class="card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="card__body">
+              <div class="card__title">教育</div>
+              <div class="card__text">國立臺北科技大學 應用英文系</div>
+            </div>
+          </article>
+
+          <article class="card glass">
+            <div class="card__icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div class="card__body">
+              <div class="card__title">聯繫資訊</div>
+              <div class="social">
+                <a class="social__btn" href="https://www.instagram.com/chichichia5/" target="_blank" rel="noopener" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="social__btn" href="https://www.linkedin.com/in/%E7%90%A6%E9%9B%85-%E6%9B%BE-02a7ba232/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="social__btn" href="mailto:chiyazheng0329@gmail.com" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass">
+            <div class="card__icon"><i class="fa-solid fa-star"></i></div>
+            <div class="card__body">
+              <div class="card__title">亮點</div>
+              <div class="card__text">TOEIC 930｜Google Ads / Analytics｜LINE Biz</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">關於我</h2>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <article class="panel">
+          <h3 class="panel__title">我擅長的事情</h3>
+          <ul class="bullets">
+            <li>活動與專案協作：從前期規劃、溝通協調到現場執行</li>
+            <li>內容與社群：文案發想、版位/貼文優化、成效觀察</li>
+            <li>中英溝通與資料整理：翻譯、報告製作、流程梳理</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3 class="panel__title">我在找什麼</h3>
+          <p class="muted">
+            我希望持續累積「能被看見的成果」：更強的作品呈現、更完整的專案脈絡、以及更清楚的個人定位。
+            如果你正在找一位能兼顧細節、也能推動專案前進的人，我會很期待聊聊。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="jobs" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">經歷</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+          <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://www.cw.com.tw/" target="_blank" rel="noopener">天下雜誌股份有限公司</a>
+                  <span class="timeline__sep">｜</span>
+                  廣告企劃專員
+                </h3>
+                <div class="timeline__date">2024.07 – Present</div>
+              </div>
+              <div class="timeline__tag">PR / Event</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/天下雜誌.png" alt="CompassPR" />
+              <ul class="bullets">
+                <li><b>活動統籌與高階關係協調</b>：主導高階主管早餐會、高峰會、論壇等大型活動，邀請來自日月光、緯創、鴻海等企業高階主管出席，達成超標出席率。</li>
+                <li><b>大型論壇總籌與跨部門整合</b>：籌備天下雜誌首場AI議題系列論壇<a href="https://futurecity.cw.com.tw/special/aiforecast2025">《2025 AI 趨勢論壇》</a>，共280人、10攤位參與，出席率70%，包含講者協調、專案周會、贊助客戶溝通與活動總控；面對川普關稅突發議題，臨時新增論壇環節並獲好評。</li>
+                <li><b>專案管理全能能力</b>：熟悉跨部門協作、時程控管、利害關係人對焦、議程與動線規劃、突發狀況應變，具備推動多專案並行的實戰經驗。</li>
+                <li><b>策略性提案與商務成交實績</b>：擅長撰寫具洞察力的整合行銷提案，切入客戶痛點並轉化為具體執行方案。成功促成包含智齡科技在天下AI論壇以及天下2000大專案合作、<a href="https://event.cw.com.tw/2025nanshanlife/index.html">南山人壽《未來會客室》第一、二季Podcast</a>合作等。</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="http://www.compasspr.com.tw/" target="_blank" rel="noopener">達豐公關顧問股份有限公司</a>
+                  <span class="timeline__sep">｜</span>
+                  公關專員
+                </h3>
+                <div class="timeline__date">2023.07 – 2024.07</div>
+              </div>
+              <div class="timeline__tag">PR / Event</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/compasspr.jpg" alt="CompassPR" />
+              <ul class="bullets">
+                <li>媒體監測報告製作</li>
+                <li>新聞稿翻譯</li>
+                <li>記者會支援</li>
+                <li>物料準備與寄送、倉儲管理、庫存控制</li>
+                <li>外務：郵件寄送、機票開票</li>
+                <li>平日、假日活動支援（活動接待）</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="http://www.keysheen.com/" target="_blank" rel="noopener">英屬開曼群島商基勝控股股份有限公司</a>
+                  <span class="timeline__sep">｜</span>
+                  運營助理
+                </h3>
+                <div class="timeline__date">2022.09 – 2022</div>
+              </div>
+              <div class="timeline__tag">Operations</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/基勝.png" alt="Keysheen" />
+              <ul class="bullets">
+                <li>協助網站優化，提升使用體驗</li>
+                <li>協助串流增加多元流量，提升品牌知名度</li>
+                <li>協助社群網站經營與平台管理</li>
+                <li>主管交辦事項</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="http://www.compasspr.com.tw/" target="_blank" rel="noopener">達豐公關顧問股份有限公司</a>
+                  <span class="timeline__sep">｜</span>
+                  實習生
+                </h3>
+                <div class="timeline__date">2022.03 – 2022.09</div>
+              </div>
+              <div class="timeline__tag">Intern</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/compasspr.jpg" alt="CompassPR Intern" />
+              <ul class="bullets">
+                <li>媒體監測報告製作、新聞稿翻譯</li>
+                <li>記者會支援、物料準備與寄送</li>
+                <li>名片資料建立、倉儲管理</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://sites.google.com/view/lncb/%E9%A6%96%E9%A0%81?authuser=0" target="_blank" rel="noopener">慈濟基金會</a>
+                  <span class="timeline__sep">｜</span>
+                  青年線上學伴趣
+                </h3>
+                <div class="timeline__date">2022.07 – 2022.08</div>
+              </div>
+              <div class="timeline__tag">Education</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/慈濟.jpg" alt="Tzu Chi" />
+              <ul class="bullets">
+                <li>教材編制、人文素養培養</li>
+                <li>文章導讀、線上教授英文</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://eng.ntut.edu.tw/" target="_blank" rel="noopener">臺北科技大學應用英文系</a>
+                  <span class="timeline__sep">｜</span>
+                  教授計畫研究助理
+                </h3>
+                <div class="timeline__date">2022.03 – 2022.06</div>
+              </div>
+              <div class="timeline__tag">Assistant</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/NTUTeng.png" alt="NTUT" />
+              <ul class="bullets">
+                <li>金費核銷</li>
+                <li>課堂助教</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://www.rulin.com.tw/" target="_blank" rel="noopener">儒林升大學補習班</a>
+                  <span class="timeline__sep">｜</span>
+                  英文輔導老師
+                </h3>
+                <div class="timeline__date">2021.10 – 2022.03</div>
+              </div>
+              <div class="timeline__tag">Tutor</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/儒林.jpg" alt="Rulin" />
+              <ul class="bullets">
+                <li>高中學測英文題目與作文輔導</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://eng.ntut.edu.tw/p/406-1091-109643,r551.php?Lang=zh-tw" target="_blank" rel="noopener">教育部</a>
+                  <span class="timeline__sep">｜</span>
+                  夜光天使計畫
+                </h3>
+                <div class="timeline__date">2021.10 – 現在</div>
+              </div>
+              <div class="timeline__tag">Volunteer</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/教育部.png" alt="MOE" />
+              <ul class="bullets">
+                <li>教材編制、偏鄉國小學童線上英文教學</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="https://cnc.ntut.edu.tw/app/home.php" target="_blank" rel="noopener">國立台北科技大學－計算機與網路中心</a>
+                  <span class="timeline__sep">｜</span>
+                  行政工讀生
+                </h3>
+                <div class="timeline__date">2020.02 – 現在</div>
+              </div>
+              <div class="timeline__tag">IT Support</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/cnc1.png" alt="CNC" />
+              <ul class="bullets">
+                <li>全校師生網路、電腦軟硬體問題排解</li>
+                <li>說明書翻譯、教室設備管理</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="http://aery.pro/" target="_blank" rel="noopener">Aery 美學繪圖板</a>
+                  <span class="timeline__sep">｜</span>
+                  社群小編
+                </h3>
+                <div class="timeline__date">2021.07 – 2021.08</div>
+              </div>
+              <div class="timeline__tag">Social</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/aery.png" alt="Aery" />
+              <ul class="bullets">
+                <li>臉書文案、官網中英文案撰寫</li>
+                <li>使用者問題排解、出貨</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__top">
+              <div>
+                <h3 class="timeline__role">
+                  <a href="http://je.joy.com.tw/" target="_blank" rel="noopener">佳音英文</a>
+                  <span class="timeline__sep">｜</span>
+                  英文輔導老師
+                </h3>
+                <div class="timeline__date">2020.09 – 2021.09</div>
+              </div>
+              <div class="timeline__tag">Tutor</div>
+            </div>
+
+            <div class="timeline__body">
+              <img class="thumb" src="./folder/joy.png" alt="Joy" />
+              <ul class="bullets">
+                <li>國小至高中英文課後輔導</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Work Photos -->
+    <section id="workphoto" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">工作花絮</h2>
+        </div>
+      </div>
+
+      <div class="masonry">
+        <!-- Card -->
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/snapdragon insiders meetup.jpg" alt="Snapdragon Insiders 粉絲聚會">
+          <figcaption>
+            <div class="workcard__title">Snapdragon Insiders 粉絲聚會</div>
+            <div class="workcard__tag">Event</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/Qualcomm DX Summit.jpg" alt="Qualcomm DX Summit">
+          <figcaption>
+            <div class="workcard__title">Qualcomm DX Summit</div>
+            <div class="workcard__tag">Conference</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/Taiwan AI Academy Annual Conference.jpg" alt="台灣人工智慧學院年會">
+          <figcaption>
+            <div class="workcard__title">台灣人工智慧學院年會</div>
+            <div class="workcard__tag">AI</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/wireless reach.jpg" alt="Qualcomm X ASUS 遠距醫療計畫">
+          <figcaption>
+            <div class="workcard__title">Qualcomm X ASUS 遠距醫療計畫</div>
+            <div class="workcard__tag">Collab</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/FUTEX forum.jpg" alt="未來科技館論壇">
+          <figcaption>
+            <div class="workcard__title">未來科技館論壇</div>
+            <div class="workcard__tag">Forum</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/Taiwan science train.jpg" alt="2023 台灣科普環島列車">
+          <figcaption>
+            <div class="workcard__title">2023 台灣科普環島列車</div>
+            <div class="workcard__tag">Campaign</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/Qualcomm innovate in Taiwan challenge.jpg" alt="高通台灣創新競賽">
+          <figcaption>
+            <div class="workcard__title">高通台灣創新競賽</div>
+            <div class="workcard__tag">Program</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/5G ACIA.jpg" alt="5G-ACIA 年度會員大會">
+          <figcaption>
+            <div class="workcard__title">5G-ACIA 年度會員大會</div>
+            <div class="workcard__tag">Industry</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">證照</h2>
+        </div>
+      </div>
+
+      <div class="grid cards">
+        <!-- TOEIC -->
+        <article class="certcard" data-lightbox>
+          <div class="certcard__top">
+            <img src="./folder/toeicscore.png" alt="TOEIC score">
+            <div>
+              <div class="certcard__title">TOEIC 930</div>
+              <div class="certcard__meta">Language</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#toeic-certificate">查看證書</div>
+          <img class="hidden" id="toeic-certificate" src="./folder/TOEIC_930.jpg" alt="TOEIC Certificate">
+        </article>
+
+        <!-- Google Ads Search -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/magnifier.png" alt="Google Ads Search">
+            <div>
+              <div class="certcard__title">Google Ads 搜尋廣告認證</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleAds-certificate">查看證書</div>
+          <img class="hidden" id="googleAds-certificate" src="./folder/google Ads.png" alt="Google Ads Certificate">
+        </article>
+
+        <!-- Google Ads Display -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/media.png" alt="Google Ads Display">
+            <div>
+              <div class="certcard__title">Google Ads 多媒體廣告認證</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleMedia-certificate">查看證書</div>
+          <img class="hidden" id="googleMedia-certificate" src="./folder/google Media.png" alt="Google Media Certificate">
+        </article>
+
+        <!-- Google Digital Garage -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/google數位學程.png" alt="Google Digital">
+            <div>
+              <div class="certcard__title">Google 數位學程｜基礎數位行銷</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleMarketing-certificate">查看證書</div>
+          <img class="hidden" id="googleMarketing-certificate" src="./folder/google Marketing.png" alt="Google Marketing Certificate">
+        </article>
+
+        <!-- GA -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/google analytics logo.png" alt="GA">
+            <div>
+              <div class="certcard__title">Google Analytics 個人認證</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleAnalytics-certificate">查看證書</div>
+          <img class="hidden" id="googleAnalytics-certificate" src="./folder/google Analytics.png" alt="Google Analytics Certificate">
+        </article>
+
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/google analytics logo.png" alt="GA Basic">
+            <div>
+              <div class="certcard__title">Google Analytics 基礎知識課程</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleAnalyticsBa-certificate">查看證書</div>
+          <img class="hidden" id="googleAnalyticsBa-certificate" src="./folder/google AnalyticsBa.png" alt="Google Analytics Basic">
+        </article>
+
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/google analytics logo.png" alt="GA Advanced">
+            <div>
+              <div class="certcard__title">Google Analytics 進階知識課程</div>
+              <div class="certcard__meta">Google</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#googleAnalyticsAd-certificate">查看證書</div>
+          <img class="hidden" id="googleAnalyticsAd-certificate" src="./folder/google AnalyticsAd.jpg" alt="Google Analytics Advanced">
+        </article>
+
+        <!-- LINE -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/line biz.png" alt="LINE Biz">
+            <div>
+              <div class="certcard__title">LINE 廣告產品認證</div>
+              <div class="certcard__meta">LINE</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#line-certificate">查看證書</div>
+          <img class="hidden" id="line-certificate" src="./folder/line 廣告產品認證.png" alt="LINE Certificate">
+        </article>
+
+        <!-- Course -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/北科大.jpg" alt="Course">
+            <div>
+              <div class="certcard__title">創業家精神微學程</div>
+              <div class="certcard__meta">Course</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#entrepreneur-certificate">查看證書</div>
+          <img class="hidden" id="entrepreneur-certificate" src="./folder/創業家微學程.png" alt="Entrepreneur Certificate">
+        </article>
+
+        <!-- Business -->
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/商教協會.jpg" alt="Business">
+            <div>
+              <div class="certcard__title">商業管理能力檢定</div>
+              <div class="certcard__meta">Business</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#business-certificate">查看證書</div>
+          <img class="hidden" id="business-certificate" src="./folder/商業管理檢定.png" alt="Business Certificate">
+        </article>
+
+        <article class="certcard">
+          <div class="certcard__top">
+            <img src="./folder/丙檢.png" alt="Trade">
+            <div>
+              <div class="certcard__title">國貿技術士檢定</div>
+              <div class="certcard__meta">Trade</div>
+            </div>
+          </div>
+          <div class="certcard__btn" data-open="#trade-certificate">查看證書</div>
+          <img class="hidden" id="trade-certificate" src="./folder/國貿業務丙檢.png" alt="Trade Certificate">
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">技能</h2>
+        </div>
+      </div>
+
+      <div class="skillgrid">
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">中文</div>
+            <div class="skill__level">母語</div>
+          </div>
+          <div class="skill__bar"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">英文</div>
+            <div class="skill__level">精通</div>
+          </div>
+          <div class="skill__bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">西文</div>
+            <div class="skill__level">學習中</div>
+          </div>
+          <div class="skill__bar"><span style="width:45%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">Python</div>
+            <div class="skill__level">學習中</div>
+          </div>
+          <div class="skill__bar"><span style="width:45%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">HTML / CSS</div>
+            <div class="skill__level">學習中</div>
+          </div>
+          <div class="skill__bar"><span style="width:50%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <div class="skill__name">Excel</div>
+            <div class="skill__level">學習中</div>
+          </div>
+          <div class="skill__bar"><span style="width:50%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="works" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">作品集</h2>
+        </div>
+      </div>
+
+      <div class="projectgrid">
+        <article class="projectcard">
+          <a class="projectcard__media" href="https://www.instagram.com/myhomebodyltd/" target="_blank" rel="noopener">
+            <img src="./folder/myhomebody.png" alt="myHomeBody">
+          </a>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">
+              <a href="https://www.instagram.com/myhomebodyltd/" target="_blank" rel="noopener">myHomeBody 社群編輯</a>
+            </h3>
+            <p class="muted">負責排版、文案發想，並分析貼文成效（觸及、曝光等）。</p>
+            <div class="tags">
+              <span class="tag">Content</span><span class="tag">Social</span><span class="tag">Analytics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <a class="projectcard__media" href="https://www.instagram.com/chiaa_veg/" target="_blank" rel="noopener">
+            <img src="./folder/chiaa_veg.png" alt="chiaa_veg">
+          </a>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">
+              <a href="https://www.instagram.com/chiaa_veg/" target="_blank" rel="noopener">Instagram 美食帳號經營</a>
+            </h3>
+            <p class="muted">中英文雙語介紹台灣素食美食，讓更多人認識在地蔬食文化。</p>
+            <div class="tags">
+              <span class="tag">Brand</span><span class="tag">Bilingual</span><span class="tag">Community</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <a class="projectcard__media" href="./folder/media competition.pdf" target="_blank" rel="noopener">
+            <img src="./folder/媒體識讀.png" alt="Media competition">
+          </a>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">
+              <a href="./folder/media competition.pdf" target="_blank" rel="noopener">媒體素養教育活動推廣｜佳作</a>
+            </h3>
+            <p class="muted">透過比賽更謹慎使用文字，也更理解媒體在社會中的角色。</p>
+            <div class="tags">
+              <span class="tag">Writing</span><span class="tag">Media Literacy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <a class="projectcard__media" href="https://reurl.cc/bkVMlX" target="_blank" rel="noopener">
+            <img src="./folder/python2.png" alt="Python visualization">
+          </a>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">
+              <a href="https://reurl.cc/bkVMlX" target="_blank" rel="noopener">Python 資料視覺化</a>
+            </h3>
+            <p class="muted">整理近 4000 筆人口統計資料並視覺化，提升閱讀性。</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Data</span><span class="tag">Visualization</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectcard__media">
+            <video controls playsinline preload="metadata">
+              <source src="./folder/20211230提案報告.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">創新創業｜卸甲 OK 繃宣傳影片</h3>
+            <p class="muted">以黃金圈理論說故事，讓觀眾理解產品目的並產生共鳴。</p>
+            <div class="tags">
+              <span class="tag">Video</span><span class="tag">Storytelling</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <a class="projectcard__media" href="https://chichia.n9s.com/" target="_blank" rel="noopener">
+            <img src="./folder/wordpress.jpg" alt="Wordpress">
+          </a>
+          <div class="projectcard__body">
+            <h3 class="projectcard__title">
+              <a href="https://chichia.n9s.com/" target="_blank" rel="noopener">WordPress 網站製作</a>
+            </h3>
+            <p class="muted">學習 WordPress 架站：部落格/商店模擬、上架商品與內容整理。</p>
+            <div class="tags">
+              <span class="tag">Web</span><span class="tag">WordPress</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section id="notes" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">筆記</h2>
+        </div>
+      </div>
+
+      <div class="notegrid">
+        <a class="notecard" href="https://hackmd.io/@chichichia5/關鍵行銷" target="_blank" rel="noopener">
+          <img src="./folder/關鍵行銷.jpg" alt="關鍵行銷">
+          <div class="notecard__title">關鍵行銷</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/行銷4" target="_blank" rel="noopener">
+          <img src="./folder/行銷4.0.jpg" alt="行銷4.0">
+          <div class="notecard__title">行銷4.0</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/電傷從0到1" target="_blank" rel="noopener">
+          <img src="./folder/電商從0到1.jpg" alt="電商從0到1">
+          <div class="notecard__title">電商從 0 到 1</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/數位行銷教科書" target="_blank" rel="noopener">
+          <img src="./folder/數位行銷教科書.jpg" alt="數位行銷教科書">
+          <div class="notecard__title">數位行銷教科書</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/流量池" target="_blank" rel="noopener">
+          <img src="./folder/流量池.jpg" alt="流量池">
+          <div class="notecard__title">流量池</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/小群效應" target="_blank" rel="noopener">
+          <img src="./folder/小群效應.png" alt="小群效應">
+          <div class="notecard__title">小群效應</div>
+        </a>
+
+        <a class="notecard" href="https://hackmd.io/@chichichia5/網路行銷超圖解" target="_blank" rel="noopener">
+          <img src="./folder/網路行銷超圖解.jpg" alt="網路行銷超圖解">
+          <div class="notecard__title">網路行銷超圖解</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">活動</h2>
+        </div>
+      </div>
+
+      <div class="masonry">
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/SA.jpg" alt="學生自治會－財務部">
+          <figcaption>
+            <div class="workcard__title">學生自治會－財務部</div>
+            <div class="workcard__tag">Campus</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/redhouse.jpg" alt="學生自治會－社團評鑑">
+          <figcaption>
+            <div class="workcard__title">學生自治會－社團評鑑</div>
+            <div class="workcard__tag">Campus</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/新生說明會.jpg" alt="學生自治會－新生說明會">
+          <figcaption>
+            <div class="workcard__title">學生自治會－新生說明會</div>
+            <div class="workcard__tag">Event</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/扶青.jpg" alt="扶青社－公關">
+          <figcaption>
+            <div class="workcard__title">扶青社－公關</div>
+            <div class="workcard__tag">PR</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/公開賽.JPG" alt="110年全國田徑公開錦標賽">
+          <figcaption>
+            <div class="workcard__title">110 年全國田徑公開錦標賽</div>
+            <div class="workcard__tag">Sport</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/全大運.jpg" alt="110年全國大專院校運動會">
+          <figcaption>
+            <div class="workcard__title">110 年全國大專院校運動會</div>
+            <div class="workcard__tag">Sport</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/111公開賽.JPG" alt="111年全國田徑公開錦標賽">
+          <figcaption>
+            <div class="workcard__title">111 年全國田徑公開錦標賽</div>
+            <div class="workcard__tag">Sport</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/112公開賽.JPG" alt="112年全國田徑公開錦標賽">
+          <figcaption>
+            <div class="workcard__title">112 年全國田徑公開錦標賽</div>
+            <div class="workcard__tag">Sport</div>
+          </figcaption>
+        </figure>
+
+        <figure class="workcard" data-lightbox>
+          <img src="./folder/112全大運.jpg" alt="112年全國大專院校運動會">
+          <figcaption>
+            <div class="workcard__title">112 年全國大專院校運動會</div>
+            <div class="workcard__tag">Sport</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <div class="brand small">
+            <span class="brand__dot"></span>
+            <span class="brand__text">Chi-Ya Tseng</span>
+          </div>
+          <div class="muted">© <span id="year"></span> Portfolio</div>
+        </div>
+        <a class="btn small ghost" href="#home"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__content" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="icon-btn lightbox__close" id="lightboxClose" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" alt="Preview" />
+      <div class="lightbox__caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
