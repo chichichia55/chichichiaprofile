@@ -114,3 +114,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const el = $("#year");
   if (el) el.textContent = String(y);
 });
+
+// ===== Certificates filter =====
+const certFilters = document.getElementById('certFilters');
+const certCards = document.querySelectorAll('#certificates .certcard');
+
+if (certFilters) {
+  certFilters.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter');
+    if (!btn) return;
+
+    certFilters.querySelectorAll('.filter').forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+
+    const f = btn.dataset.filter;
+    certCards.forEach(card => {
+      const cat = card.dataset.cat || 'all';
+      const show = (f === 'all') || (cat === f);
+      card.classList.toggle('is-hidden', !show);
+    });
+  });
+}
+const heroBg = document.querySelector('.hero__bg');
+
+document.addEventListener('mousemove', (e) => {
+  const { innerWidth, innerHeight } = window;
+
+  const x = (e.clientX / innerWidth - 0.5) * 30;
+  const y = (e.clientY / innerHeight - 0.5) * 30;
+
+  heroBg.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+});
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  heroBg.style.transform += ` translateY(${scrollY * 0.05}px)`;
+});
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  heroBg.style.transform += ` translateY(${scrollY * 0.05}px)`;
+});
+
