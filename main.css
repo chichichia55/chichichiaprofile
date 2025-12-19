@@ -292,14 +292,18 @@ a:hover{ text-decoration:none; }
   flex-wrap: wrap;
 }
 .avatar{
-  box-shadow: 0 10px 30px rgba(0,0,0,.12);
-  width: 110px;
-  height: 110px;
+  width: 150px !important;
+  height: 150px !important;
   border-radius: 999px;
   object-fit: cover;
-  border: 3px solid rgba(255,255,255,0.22);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+
+  border: 4px solid rgba(255,255,255,0.9) !important;
+
+  box-shadow:
+    0 18px 40px rgba(2, 6, 23, 0.18),
+    0 0 0 8px rgba(56,189,248,0.12) !important;
 }
+
 .hero__name{
   margin:0;
   font-size: clamp(26px, 3.2vw, 44px);
@@ -620,6 +624,17 @@ a:hover{ text-decoration:none; }
   background: linear-gradient(90deg, rgba(124,58,237,0.85), rgba(56,189,248,0.85), rgba(34,197,94,0.75));
   transition: width 1s ease;
 }
+.skill__bar span{
+  width: 0%;
+  transition: width 1s ease;
+  will-change: width;
+}
+
+/* 觸發後才跑出來 */
+.skill.is-animate .skill__bar span{
+  width: var(--level);
+}
+
 
 .projectgrid{
   display:grid;
@@ -685,10 +700,19 @@ a:hover{ text-decoration:none; }
 }
 .notecard:hover{ transform: translateY(-2px); }
 .notecard img{
-  width:100%;
-  height: 170px;
-  object-fit: cover;
-  display:block;
+  width: 100%;
+  height: 170px;              /* 想更大可改 190/210 */
+  object-fit: contain;        /* ✅ 完整顯示 */
+  background: rgba(255,255,255,0.85);  /* ✅ 書封周圍乾淨底 */
+  padding: 10px;              /* ✅ 留白像書架 */
+  display: block;
+}
+.notecard{
+  display: flex;
+  flex-direction: column;
+}
+.notecard__title{
+  margin-top: auto;
 }
 .notecard__title{
   padding: 10px 12px;
@@ -1273,4 +1297,51 @@ a{
   box-shadow:
     0 18px 40px rgba(0, 0, 0, 0.22),
     0 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Hero 兩欄：左主內容、右側欄 */
+.hero__content{
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* 左邊：把 profile + intro 綁在一起 */
+.hero__profile{ grid-column: 1; }
+.hero__intro{ grid-column: 1; }
+
+/* 右邊：cards 放到右側欄 */
+.hero__cards{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 手機版回到上下 */
+@media (max-width: 900px){
+  .hero__content{
+    grid-template-columns: 1fr;
+  }
+  .hero__cards{
+    grid-column: 1;
+  }
+}
+
+/* 讓左右欄同高 */
+.hero__content{
+  align-items: stretch; /* ✅ 關鍵：兩欄高度拉齊 */
+}
+
+/* 左邊那張大卡撐滿整個左欄高度 */
+.hero__intro{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CTA 貼底（可選，會更像版面設計） */
+.hero__cta{
+  margin-top: auto;
 }

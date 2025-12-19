@@ -155,3 +155,40 @@ window.addEventListener('scroll', () => {
   heroBg.style.transform += ` translateY(${scrollY * 0.05}px)`;
 });
 
+// Skill bars animate when in view (repeatable)
+(() => {
+  const skills = document.querySelectorAll('#skills .skill');
+  if (!skills.length) return;
+
+  // 先把每個 bar 的 level 存成 CSS 變數
+  skills.forEach(skill => {
+    const span = skill.querySelector('.skill__bar span');
+    if (!span) return;
+    const level = span.dataset.level || '0';
+    span.style.setProperty('--level', `${level}%`);
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+
+      if (entry.isIntersecting) {
+        // 進入視窗：觸發動畫
+        el.classList.add('is-animate');
+      } else {
+        // 離開視窗：縮回去，回來才能再跑
+        el.classList.remove('is-animate');
+
+        // 保險：重置到 0，避免某些瀏覽器不重播 transition
+        const span = el.querySelector('.skill__bar span');
+        if (span) span.style.width = '0%';
+        // 讓瀏覽器吃到一次 reflow，再把 inline width 清掉交回 CSS 控制
+        el.offsetHeight;
+        if (span) span.style.width = '';
+      }
+    });
+  }, { threshold: 0.35 });
+
+  skills.forEach(s => io.observe(s));
+})();
+
